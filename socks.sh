@@ -10,11 +10,11 @@ cd src
 mkdir /etc/3proxy/
 mv 3proxy /etc/3proxy/
 cd /etc/3proxy/
-wget --no-check-certificate https://raw.githubusercontent.com/sameerlike141/3proxy-1/master/3proxy.cfg
+wget --no-check-certificate https://raw.githubusercontent.com/VashtiLegarreta/socks/main/3proxy.cfg
 chmod 600 /etc/3proxy/3proxy.cfg
-wget --no-check-certificate https://raw.githubusercontent.com/sameerlike141/3proxy-1/master/.proxyauth
+wget --no-check-certificate https://raw.githubusercontent.com/VashtiLegarreta/socks/main/.proxyauth
 chmod 600 /etc/3proxy/.proxyauth
 cd /etc/init.d/
-wget --no-check-certificate https://raw.github.com/barankilic/3proxy/master/3proxyinit
+wget --no-check-certificate https://raw.githubusercontent.com/VashtiLegarreta/socks/main/3proxyinit
 chmod  +x /etc/init.d/3proxyinit
 update-rc.d 3proxyinit defaults
